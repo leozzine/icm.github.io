@@ -50,7 +50,7 @@ body {
 .elemento-top-quem-somos {
     background: rgb(25, 59, 116);
     background:
-        url(/imgs/grafismo-1.png) right 80px / 75%,
+        url(/imgs/grafismo-1.png) right 80px / 70%,
         linear-gradient(140deg, rgba(25, 59, 116, 1) 0%, rgba(14, 19, 54, 1) 100%);
     background-repeat: no-repeat;
 
@@ -63,7 +63,7 @@ body {
      background-repeat: no-repeat;
 }
 
-.elementos-relatorios {
+.elementos-relatorios, .elementos-nossa-historia {
     background:
         url(/imgs/grafismo-3.png) left bottom / 38%;
         background-repeat: no-repeat;
@@ -88,11 +88,15 @@ body {
         background: none;
     }
 }
-
-.teste {
-    top: 1700px;
-    left: -5%;
-    z-index: -1;
+@media (min-width:769px) and (max-width:1440px) {
+    .elementos-top-1 {
+    background: rgb(25, 59, 116);
+    background:
+        url(/imgs/grafismo-top-direita.png) right 80px / 49%,
+        url(/imgs/grafismo-2-azul.png) -80px 200px / 15%,
+        linear-gradient(140deg, rgba(25, 59, 116, 1) 0%, rgba(14, 19, 54, 1) 100%);
+    background-repeat: no-repeat;
+    }
 }
 
 
