@@ -1,0 +1,312 @@
+:root {
+    --icm-terciary: #171A77;
+    --icm-secondary: #599EE5;
+    --icm-primary: #FFC33E;
+    --icm-cta: #FFCB30;
+    --icm-from-color: #193B74;
+    --icm-to-color: #0E1336;
+    --icm-highlight: #001689;
+    --icm-margin-120: 120px;
+    --icm-margin-60: 60px;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--icm-terciary);
+    color: white;
+
+    background: rgb(25, 59, 116);
+    background: linear-gradient(140deg, rgba(25, 59, 116, 1) 0%, rgba(14, 19, 54, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#193b74", endColorstr="#0e1336", GradientType=1);
+}
+
+.icm-gradient {
+    background: rgb(25, 59, 116);
+    background: linear-gradient(140deg, rgba(25, 59, 116, 1) 0%, rgba(14, 19, 54, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#193b74", endColorstr="#0e1336", GradientType=1);
+}
+
+/* ELEMENTOS FLUTUANTES */
+.elemento-top-quem-somos {
+    background: rgb(25, 59, 116);
+    background:
+        url(/imgs/grafismo-1.png) right 80px / 75%,
+        linear-gradient(140deg, rgba(25, 59, 116, 1) 0%, rgba(14, 19, 54, 1) 100%);
+    background-repeat: no-repeat;
+
+}
+
+.elementos-quem-somos {
+    background:
+        url(/imgs/grafismo-3.png) left bottom / 42%,
+        url(/imgs/grafismo-fence.png) 90% top / 426px;
+     background-repeat: no-repeat;
+}
+
+.elementos-relatorios {
+    background:
+        url(/imgs/grafismo-3.png) left bottom / 38%;
+        background-repeat: no-repeat;
+}
+
+.elementos-top-1 {
+    background: rgb(25, 59, 116);
+    background:
+        url(/imgs/grafismo-top-direita.png) right 80px / 49%,
+        url(/imgs/grafismo-2-azul.png) 7% 200px / 15%,
+        linear-gradient(140deg, rgba(25, 59, 116, 1) 0%, rgba(14, 19, 54, 1) 100%);
+    background-repeat: no-repeat;
+}
+
+@media (max-width:768px) {
+    .elemento-top-quem-somos, .elementos-top-1 {
+        background: rgb(25, 59, 116);
+        background: linear-gradient(140deg, rgba(25, 59, 116, 1) 0%, rgba(14, 19, 54, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#193b74", endColorstr="#0e1336", GradientType=1);
+    }
+    .elementos-quem-somos, .elementos-nossa-historia, .elementos-relatorios {
+        background: none;
+    }
+}
+
+.teste {
+    top: 1700px;
+    left: -5%;
+    z-index: -1;
+}
+
+
+.icm-header {
+    min-height: 60px;
+}
+
+@media (min-width: 769px) {
+    .icm-header {
+        min-height: 105px;
+    }
+}
+
+.logo-icm-topo {
+    width: 200px;
+    height: auto;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo-icm-topo {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1025px) {
+    .logo-icm-topo {
+        width: 429px;
+        height: 93px;
+
+    }
+}
+
+.icm-toggle-menu {
+    border-color: transparent;
+    color: var(--icm-highlight);
+}
+
+.icm-icon-menu {
+    width: 8px;
+    height: 11px;
+}
+
+.icm-social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: var(--icm-terciary);
+    color: white;
+    width: 32px;
+    height: 32px;
+}
+
+.icm-cta {
+    border-radius: 24px;
+    line-height: 48px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 54px;
+    background-color: var(--icm-cta);
+}
+
+.icm-cta:hover {
+    background-color: var(--icm-terciary);
+}
+
+/* .grafismo {
+    background-image: url("/imgs/grafismo-1.png");
+    background-position: right -73px;
+    background-size: 75%;
+    background-repeat: no-repeat;
+}
+
+.grafismo-2 {
+    background-image: url("/imgs/grafismo-2.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+    */
+
+/* .icm-grafismo-esquerda {
+    background-image: url(/imgs/grafismo-3.png);
+    background-position: left 120%;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+/* @media (min-width: 1441px) {
+    .grafismo {
+        background-size: 80%;
+    }
+} */
+
+
+.icm-shape-h1 {
+    max-width: 50px;
+}
+
+.icm-h1 {
+    color: var(--icm-primary);
+}
+
+.icm-h2 {
+    color: white;
+}
+
+.icm-list li {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.icm-barra-janela {
+    background-color: var(--icm-primary);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 16px 5%;
+    border: 5px solid black;
+}
+
+.icm-inner-janela {
+    border: 5px solid black;
+    border-top-width: 0;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+@media (min-width:1024px) {
+
+    .shape-diamond {
+        background-image: url(/imgs/shape-diamond.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+}
+
+.icm-video-wrapper {
+    border: 5px solid transparent;
+    transition: all ease-in .3s;
+}
+
+.icm-video-wrapper:hover {
+    border: 5px solid var(--icm-primary);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.554);
+}
+
+.icm-video-wrapper img {
+    transition: all ease-in .3s;
+}
+
+.icm-video-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.icm-dd-icon::after {
+    color: var(--icm-primary) !important;
+    border-width: 6px;
+}
+
+.icm-flip {
+    transform: scaleX(-1);
+}
+
+.icm-list-inner {
+    color: var(--icm-primary);
+}
+
+.icm-list-inner li {
+    margin-bottom: 12px;
+}
+
+.icm-list-inner span {
+    color: white;
+}
+
+.container-xl {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+
+.relatorios-carousel.slick-dotted.slick-slider {
+    margin-bottom: 16px;
+}
+
+.relatorios-carousel .slick-slide {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.appenddots {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+}
+
+.appenddots .slick-dots {
+    position: initial;
+    bottom: initial !important;
+}
+
+.appenddots .slick-dots li button::before {
+    color: rgba(255, 255, 255, .6);
+    font-size: 10px;
+}
+
+.appenddots .slick-dots li.slick-active button:before {
+    color: var(--icm-primary);
+}
+
+@media (min-width: 576px) {
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
