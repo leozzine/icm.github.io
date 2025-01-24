@@ -60,14 +60,37 @@ body {
     background:
         url(/imgs/grafismo-3.png) left bottom / 42%,
         url(/imgs/grafismo-fence.png) 90% top / 426px;
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
 
-.elementos-relatorios, .elementos-nossa-historia {
+.elementos-relatorios,
+.elementos-nossa-historia {
     background:
         url(/imgs/grafismo-3.png) left bottom / 38%;
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
+
+.elementos-instituto {
+    background:
+        url(/imgs/grafismo-3.png) left 25% / 30%;
+    background-repeat: no-repeat;
+}
+
+.elementos-instituto-2 {
+    background:
+        url(/imgs/shape-diamond-branco.png) left 25%,
+        url(/imgs/shape-serpentina.png) right 25%;
+    background-repeat: no-repeat;
+}
+
+.elementos-videos, elementos-contato {
+    background:
+        url(/imgs/shape-espiral.png) left 45%,
+        url(/imgs/shape-e.png) right 75%,
+        url(/imgs/shape-star-white.png) 95% 35%;
+    background-repeat: no-repeat;
+}
+
 
 .elementos-top-1 {
     background: rgb(25, 59, 116);
@@ -79,23 +102,39 @@ body {
 }
 
 @media (max-width:768px) {
-    .elemento-top-quem-somos, .elementos-top-1 {
+
+    .elemento-top-quem-somos,
+    .elementos-top-1 {
         background: rgb(25, 59, 116);
         background: linear-gradient(140deg, rgba(25, 59, 116, 1) 0%, rgba(14, 19, 54, 1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#193b74", endColorstr="#0e1336", GradientType=1);
     }
-    .elementos-quem-somos, .elementos-nossa-historia, .elementos-relatorios {
+
+    .elementos-quem-somos,
+    .elementos-nossa-historia,
+    .elementos-relatorios,
+    .elementos-instituto,
+    .elementos-instituto-2,
+    .elementos-videos,
+    .elementos-contato {
         background: none;
     }
 }
+
+@media (min-width:769px) and (max-width:1024px) {
+    .elementos-instituto-2 {
+        background: none;
+    }
+}
+
 @media (min-width:769px) and (max-width:1440px) {
     .elementos-top-1 {
-    background: rgb(25, 59, 116);
-    background:
-        url(/imgs/grafismo-top-direita.png) right 80px / 49%,
-        url(/imgs/grafismo-2-azul.png) -80px 200px / 15%,
-        linear-gradient(140deg, rgba(25, 59, 116, 1) 0%, rgba(14, 19, 54, 1) 100%);
-    background-repeat: no-repeat;
+        background: rgb(25, 59, 116);
+        background:
+            url(/imgs/grafismo-top-direita.png) right 80px / 49%,
+            url(/imgs/grafismo-2-azul.png) -80px 200px / 15%,
+            linear-gradient(140deg, rgba(25, 59, 116, 1) 0%, rgba(14, 19, 54, 1) 100%);
+        background-repeat: no-repeat;
     }
 }
 
@@ -258,8 +297,19 @@ body {
     border-width: 6px;
 }
 
-.icm-flip {
+.icm-flip-bottom {
     transform: scaleX(-1);
+}
+
+@media (max-width:768px) {
+    .icm-flip-bottom {
+        transform: scaleX(-1);
+        transform: rotate(-90deg);
+    }
+
+    .icm-flip-top {
+        transform: rotate(90deg);
+    }
 }
 
 .icm-list-inner {
