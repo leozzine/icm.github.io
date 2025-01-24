@@ -83,7 +83,8 @@ body {
     background-repeat: no-repeat;
 }
 
-.elementos-videos, elementos-contato {
+.elementos-videos,
+elementos-contato {
     background:
         url(/imgs/shape-espiral.png) left 45%,
         url(/imgs/shape-e.png) right 75%,
@@ -174,11 +175,6 @@ body {
     color: var(--icm-highlight);
 }
 
-.icm-icon-menu {
-    width: 8px;
-    height: 11px;
-}
-
 .icm-social-icon {
     display: flex;
     align-items: center;
@@ -188,6 +184,14 @@ body {
     color: white;
     width: 32px;
     height: 32px;
+}
+.icm-social-icon:hover {
+    background-color: var(--icm-primary);
+}
+
+.icm-social-icon a {
+    text-decoration: none !important;
+    color: white;
 }
 
 .icm-cta {
@@ -202,33 +206,6 @@ body {
 .icm-cta:hover {
     background-color: var(--icm-terciary);
 }
-
-/* .grafismo {
-    background-image: url("/imgs/grafismo-1.png");
-    background-position: right -73px;
-    background-size: 75%;
-    background-repeat: no-repeat;
-}
-
-.grafismo-2 {
-    background-image: url("/imgs/grafismo-2.png");
-    background-position: center right;
-    background-repeat: no-repeat;
-}
-    */
-
-/* .icm-grafismo-esquerda {
-    background-image: url(/imgs/grafismo-3.png);
-    background-position: left 120%;
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
-
-/* @media (min-width: 1441px) {
-    .grafismo {
-        background-size: 80%;
-    }
-} */
 
 
 .icm-shape-h1 {
