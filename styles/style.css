@@ -161,6 +161,12 @@ elementos-contato {
     }
 }
 
+@media (min-width: 1441px) {
+    .elementos-relatorios {
+        background-position-y: 600px;
+    }
+}
+
 
 .icm-header {
     min-height: 60px;
@@ -329,11 +335,11 @@ elementos-contato {
     padding-right: 24px !important;
 }
 
-.relatorios-carousel.slick-dotted.slick-slider {
+.relatorios-carousel.slick-dotted.slick-slider, .projetos-carousel.slick-dotted.slick-slider {
     margin-bottom: 16px;
 }
 
-.relatorios-carousel .slick-slide {
+.relatorios-carousel .slick-slide, .projetos-carousel .slick-slide  {
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -357,6 +363,11 @@ elementos-contato {
 .appenddots .slick-dots li.slick-active button:before {
     color: var(--icm-primary);
 }
+
+.btn-nav-projetos {
+    padding-top: 24%;
+}
+
 
 @media (min-width: 576px) {
     .dropdown:hover>.dropdown-menu {

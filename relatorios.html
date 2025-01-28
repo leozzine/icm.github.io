@@ -202,13 +202,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-1 d-none d-sm-block">
+                    <div class="col-1 d-none d-sm-block cursor-pointer">
                         <img src="/imgs/arrow-right.png" alt="lista anterior" id="icm-next-slide" class="img-fluid cursor-pointer" />
                     </div>
                 </div>
                 <div class="appenddots"></div>
             </div>
-
         </section>
     </div>
 
@@ -273,7 +272,7 @@
 
             var btnprevious = document.getElementById('icm-previous-slide');
             var prevSlide = function prevSlide(slider) {
-                $(slider).slick('slickNext');
+                $(slider).slick('slickPrev');
             };
             btnprevious.addEventListener('click', function () {
                 return prevSlide('.relatorios-carousel');
