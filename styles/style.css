@@ -46,9 +46,22 @@ p {
 
 @media (max-width:425px) {
     .fs-5 {
-        font-size: 1rem!important;
+        font-size: 1rem !important;
     }
 }
+
+.cursor-pointer {
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.cursor-pointer:hover {
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+    transform: scale(1.1);
+    transition: all ease .3s;
+}
+
 .icm-gradient {
     background: rgb(25, 59, 116);
     background: linear-gradient(140deg, rgba(25, 59, 116, 1) 0%, rgba(14, 19, 54, 1) 100%);
@@ -194,6 +207,7 @@ elementos-contato {
     width: 32px;
     height: 32px;
 }
+
 .icm-social-icon:hover {
     background-color: var(--icm-primary);
 }
