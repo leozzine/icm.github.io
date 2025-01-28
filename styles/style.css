@@ -40,6 +40,15 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#193b74", endColorstr="#0e1336", GradientType=1);
 }
 
+p {
+    word-wrap: break-word;
+}
+
+@media (max-width:425px) {
+    .fs-5 {
+        font-size: 1rem!important;
+    }
+}
 .icm-gradient {
     background: rgb(25, 59, 116);
     background: linear-gradient(140deg, rgba(25, 59, 116, 1) 0%, rgba(14, 19, 54, 1) 100%);
