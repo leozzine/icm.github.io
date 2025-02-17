@@ -51,7 +51,7 @@
             <nav class="navbar navbar-expand-lg bg-white p-0 m-0">
                 <div class="d-flex align-items-center justify-content-between flex-fill flex-md-auto icm-header">
                     <a href="quem-somos.html" class="text-nowrap align-self-end nav-bar-brand">
-                        <img data-bs-toggle="collapse" flex-grow-0" src="/imgs/logo-icm.png" class="logo-icm-topo"
+                        <img data-bs-toggle="collapse" src="/imgs/logo-icm.png" class="logo-icm-topo"
                             loading="lazy" alt="logo icm" />
                     </a>
                     <button class="navbar-toggler btn-sm icm-toggle-menu" type="button" data-bs-toggle="collapse"
@@ -109,6 +109,7 @@
         <!-- CAROUSEL -->
         <section>
             <div class="container-xl pt-4 pb-5">
+                <div class="appenddots mb-3"></div>
                 <div class="row justify-content-center">
                     <div class="col-1 d-none d-sm-block btn-nav-projetos">
                         <img src="/imgs/arrow-left.png" alt="lista anterior" id="icm-previous-slide" class="img-fluid cursor-pointer " />
@@ -269,7 +270,6 @@
                             class="img-fluid cursor-pointer" />
                     </div>
                 </div>
-                <div class="appenddots"></div>
             </div>
 
         </section>
@@ -323,6 +323,7 @@
                     dots: true,
                     arrows: false,
                     appendDots: $('.appenddots'),
+                    adaptativeHeight:true,
                 }
             );
 
